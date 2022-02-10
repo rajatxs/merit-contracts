@@ -12,6 +12,13 @@ contract App is Context, PublisherService, ArticleService {
 		_;
 	}
 
+	/** 
+	 * @dev Returns name of contract
+	 */
+	function name() public pure returns(string memory) {
+		return "Merit Article Store";
+	}
+
 	/**
 	 * @dev Get list of articles published by `_publisher`
 	 */
